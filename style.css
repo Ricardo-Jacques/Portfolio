@@ -138,10 +138,18 @@ main > h1 {
     padding-bottom: 30px;
 }
 
+.carrossel-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Div onde é carregada a imagem e o texto do projeto */
 .carrossel-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 85%;
 }
 
 /* Animação do carrossel */
@@ -173,5 +181,16 @@ main > h1 {
 
 .carrossel-item  > img {
     height: auto;
-    width: 70%;
+    width: 90%;
+}
+
+.box_setas {
+    background-color: #0808082e;
+}
+
+.setas {
+    height: 50px;
+    width: 50px;
+    color: #ffffff;
+    background-origin: white;
 }
