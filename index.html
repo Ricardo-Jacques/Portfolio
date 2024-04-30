@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu portfólio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <h2>Sobre Mim</h2>
-            <h2>Portfólio</h2>
-            <h2>Contato</h2>
+            <h2 onclick="scrollPara('.sobre_mim')">Sobre Mim</h2>
+            <h2 onclick="scrollPara('.portfolio')">Portfólio</h2>
+            <h2 onclick="window.location.href = 'https://api.whatsapp.com/send?phone=5551997175497&text=';">Contato</h2>
         </nav>
         <aside>
             <div>
-                <img src="imagens/whatsapp.svg" alt="ícone whatsapp">
-                <img src="imagens/github.svg" alt="ícone Github">
-                <img src="imagens/linkedin.svg" alt="ícone Linkedin">
+                <a href="https://api.whatsapp.com/send?phone=5551997175497&text=" target="_blank"><img src="imagens/whatsapp.svg" alt="ícone whatsapp"></a>
+                <a href="https://github.com/Ricardo-Jacques" target="_blank"><img src="imagens/github.svg" alt="ícone Github"></a>
+                <a href="https://www.linkedin.com/in/ricardo-jacques-b7548a237" target="_blank"><img src="imagens/linkedin.svg" alt="ícone Linkedin"></a>
             </div>
             <p>ricardojacques03@gmail.com</p>
         </aside>
@@ -52,7 +53,7 @@
         <h1>Meus Trabalhos</h1>
         <section class="portfolio">
             <div class="carrossel-slider">
-                <div class="box_setas"><img class="setas" src="imagens/chevron-leftbranco.png" alt=""></div>
+                <div id="seta_esquerda" class="box_setas"><img class="setas" src="imagens/chevron-leftbranco.png" alt=""></div>
                 <div class="carrossel-item">
                     <img src="imagens/print-MR.png" alt="Site da Midia Regener">
                     <p>Site desenvolvido para a empresa <a href="https://midiaregener.com/" target="_blank">
@@ -61,7 +62,7 @@
                 </div>
                 <div class="carrossel-item">
                     <img src="imagens/print-DriveUp.png" alt="Site da DriveUp">
-                    <p>Site desenvolvido para a empresa <a href="http://www.driveup.com.br/" target="_blank">
+                    <p>Site desenvolvido para a empresa <a class="driveup" href="http://www.driveup.com.br/" target="_blank">
                         DriveUp.</a> Esta empresa trabalha com transporte executivo de luxo em Porto Alegre, 
                         região metropolitana, Serra Gaúcha e na Flórida, nos EUA.
                     </p>
@@ -70,13 +71,14 @@
                     <img src="imagens/print-IFRS2.jpg" alt="Sistema de Chaves IFRS">
                     <p>Sistema de claviculário desenvolvido para gerir as chaves do IFRS Campus Canoas.
                         O sistema foi desenvolvido utilizando PHP e MySql e possui as funções: cadastro de
-                        chaves; empréstimo de chaves(retirada e devolução)
+                        chaves; empréstimo de chaves(retirada e devolução), consulta e histórico de operações.
                     </p>
                 </div>
-                <div class="box_setas"><img class="setas" src="imagens/chevron-rightbranco.png" alt=""></div>
+                <div id="seta_direita" class="box_setas"><img class="setas" src="imagens/chevron-rightbranco.png" alt=""></div>
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/script_cabecalho.js"></script>
 </body>
 </html>

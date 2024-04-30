@@ -1,0 +1,55 @@
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    width: 100%;
+    background-color: #66748B;
+}
+
+header.fixado {
+    position: fixed;
+    background-color: #0e131aa3;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+    color: #ffffff;
+    margin-left: 4%;
+}
+
+header > nav > h2 {
+    cursor: pointer;
+}
+
+header > aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5% 0px 0px;
+    padding: 1% 0px 0px 0px;
+}
+
+header > aside > div {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+header > aside p {
+    padding: 10px 0px 0px 0px;
+}
+
+a {
+    height: 30px;
+    width: 30px;
+}
+
+a > img {
+    height: 100%;
+    width: 100%;
+}
