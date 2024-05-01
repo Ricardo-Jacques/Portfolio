@@ -170,6 +170,10 @@ main > h1 {
     background-origin: white;
 }
 
+section.perfil > aside {
+    display: none;
+    }
+
 /* Responsividade para desktop*/
 @media (max-width: 1050px) {
     img.foto_perfil {
@@ -200,5 +204,74 @@ main > h1 {
 
     ul > li {
         font-size: 1.1em;
+    }
+}
+
+/* Responsividade para mobile */
+@media (max-width: 800px) {
+    div.apresentacao {
+        flex-direction: column;
+        height: auto;
+    }
+
+    section.perfil {
+        width: 100%;
+    }
+
+    img.foto_perfil {
+        width: 55%;
+    }
+
+    section.perfil > h1 {
+        margin: 10px 0px 10px 0px;
+    }
+
+    section.perfil > div {
+        align-self: flex-start;
+        margin: 2% 0px 0px 4%;
+    }
+
+    section.perfil > div > ul {
+        margin: 2% 0px 0px 10%;
+    }
+
+    section.sobre_mim {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 30px 0px 30px 0px;
+        align-content: center;
+    }
+
+    section.sobre_mim > div {
+        margin: 0px;
+    }
+
+    section.perfil > div > h2 {
+        font-size: 1.7em;
+    }
+
+    ul > li {
+        font-size: 1.5em;
+    }
+
+    section.perfil > aside {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        margin: 0px 5% 0px 0px;
+        padding: 3% 0px 3% 0px;
+    }
+
+    section.perfil > aside > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 125px;
     }
 }
