@@ -110,6 +110,7 @@ main > h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 /* Div onde é carregada a imagem e o texto do projeto */
@@ -118,10 +119,6 @@ main > h1 {
     flex-direction: column;
     align-items: center;
     width: 85%;
-}
-
-.carrossel-item > p {
-    text-align: justify;
 }
 
 /* Animação do carrossel */
@@ -141,6 +138,7 @@ main > h1 {
 }
 
 .carrossel-item > p {
+    text-align: justify;
     align-self: center;
     color: #ffffff;
     width: 350px;
@@ -288,5 +286,36 @@ section.perfil > aside {
 
     section.sobre_mim > div > p {
         font-size: 1.1em;
+    }
+    .setas {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    section.perfil > h1 {
+        font-size: 1.5em;
+    }
+
+    section.perfil > div > h2 {
+        font-size: 1.2em;
+    }
+
+    ul > li {
+        font-size: 1.1em;
+    }
+
+    section.sobre_mim > div > p {
+        font-size: 1.1em;
+    }
+    .setas {
+        height: 25px;
+        width: 25px;
+    }
+
+    .carrossel-item > p {
+        width: 80%;
+        font-size: 1em;
     }
 }

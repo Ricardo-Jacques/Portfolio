@@ -1,5 +1,6 @@
 /* Cabeçalho */
 header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     height: 15vh;
@@ -57,7 +58,7 @@ a > img {
 /* Responsividade para mobile */
 @media (max-width: 800px) {
     header {
-        width: 100vw;
+        
         justify-content: center;
     }
 
@@ -75,11 +76,6 @@ a > img {
 }
 
 @media (max-width: 500px) {
-    header {
-        width: 100vw;
-        justify-content: center;
-    }
-
     header > nav {
         width: 250px;
     }
