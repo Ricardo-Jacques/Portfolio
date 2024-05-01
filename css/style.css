@@ -280,7 +280,7 @@ section.perfil > aside {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-device-width: 500px) {
     section.perfil > div > h2 {
         font-size: 1.4em;
     }
@@ -298,7 +298,7 @@ section.perfil > aside {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-device-width: 400px) {
     section.perfil > h1 {
         font-size: 1.5em;
     }
@@ -314,6 +314,7 @@ section.perfil > aside {
     section.sobre_mim > div > p {
         font-size: 1.1em;
     }
+
     .setas {
         height: 25px;
         width: 25px;
