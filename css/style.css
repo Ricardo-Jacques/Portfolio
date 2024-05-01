@@ -13,6 +13,7 @@
 /* Corpo da página */
 body {
     background-color: #EFF3F0;
+    width: 100%;
 }
 
 div.apresentacao {
@@ -90,6 +91,7 @@ main {
     text-align: center;
     color: white;
     padding-top: 40px;
+    width: 100%;
 }
 
 section.portfolio {
@@ -264,7 +266,6 @@ section.perfil > aside {
         justify-content: center;
         align-items: center;
         width: 200px;
-        margin: 0px 5% 0px 0px;
         padding: 3% 0px 3% 0px;
     }
 
@@ -273,5 +274,19 @@ section.perfil > aside {
         flex-direction: row;
         justify-content: space-between;
         width: 125px;
+    }
+}
+
+@media (max-width: 500px) {
+    section.perfil > div > h2 {
+        font-size: 1.4em;
+    }
+
+    ul > li {
+        font-size: 1.2em;
+    }
+
+    section.sobre_mim > div > p {
+        font-size: 1.1em;
     }
 }

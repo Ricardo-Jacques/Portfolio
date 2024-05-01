@@ -57,6 +57,7 @@ a > img {
 /* Responsividade para mobile */
 @media (max-width: 800px) {
     header {
+        width: 100vw;
         justify-content: center;
     }
 
@@ -72,3 +73,19 @@ a > img {
         display: none;
     }
 }
+
+@media (max-width: 500px) {
+    header {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    header > nav {
+        width: 250px;
+    }
+
+    nav > h2 {
+        font-size: 1em;
+    }
+}
+
